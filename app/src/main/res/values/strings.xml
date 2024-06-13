@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">user_manager_v1</string>
+    <string name="app_name">user_management_demo_application</string>
     <string name="welcome_msg">Welcome User</string>
 
     <!-- For Sign Up Page / Activity -->

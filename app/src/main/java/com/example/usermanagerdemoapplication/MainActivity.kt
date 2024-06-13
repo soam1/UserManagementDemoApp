@@ -26,15 +26,16 @@ class MainActivity : AppCompatActivity() {
 
 //    end of onCreate method
 
-    public fun gotoSignUp(view: View) {
+    public fun goToSignUp(view: View) {
         val intent: Intent = Intent(this, SignUpActivity::class.java)
         startActivity(intent)
         finish()
     }
 
-    public fun gotoSignIn(view: View) {
+    public fun goToSignIn(view: View) {
         val intent: Intent = Intent(this, SignInActivity::class.java)
         startActivity(intent)
         finish()
     }
+
 }

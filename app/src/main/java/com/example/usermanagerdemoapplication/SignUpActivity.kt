@@ -38,7 +38,7 @@ class SignUpActivity : AppCompatActivity() {
         sign_up_btn.setOnClickListener { processFormFields() }
     }
 
-    // End Of On Create Method.
+    // End Of onCreate Method.
     fun goToHome(view: View?) {
         val intent = Intent(this@SignUpActivity, MainActivity::class.java)
         startActivity(intent)
@@ -86,7 +86,11 @@ class SignUpActivity : AppCompatActivity() {
             Response.ErrorListener { error ->
                 error.printStackTrace()
                 println(error.message)
-                Toast.makeText(this@SignUpActivity, "Registration Un-Successful", Toast.LENGTH_LONG)
+                Toast.makeText(
+                    this@SignUpActivity,
+                    "Registration Un-Successful BECAUSE ${error.message}",
+                    Toast.LENGTH_LONG
+                )
                     .show()
             }) {
             @Throws(AuthFailureError::class)
